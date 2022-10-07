@@ -14,11 +14,11 @@ jobs:
     container: cypress/browser:node14.17.0-chrome88-ff89
     
     steps:
-      name: Checkout
+    - name: Checkout
       uses: actions/checkout@v3.1.0
       
-      name: cypress run 
+    - name: cypress run 
       uses: cypress-io/github-action@v4.2.0
       with:
           command: cy_run_on_chrome
-          record:true
+          record: true
