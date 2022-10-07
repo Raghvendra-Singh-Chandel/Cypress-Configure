@@ -11,7 +11,7 @@ jobs:
   Cypress-run:
 
     runs-on: ubuntu-latest
-    container: cypress/browser:node14.17.0-chrome88-ff89
+    container: cypress/browsers:node16.17.0-chrome106
     
     steps:
     - name: Checkout
